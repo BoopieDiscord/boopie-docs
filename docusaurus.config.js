@@ -17,6 +17,7 @@ module.exports = {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
@@ -31,7 +32,7 @@ module.exports = {
       defaultMode: 'dark',
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: true,
+      disableSwitch: false,
     },
     navbar: {
       title: 'Boopie',
@@ -45,6 +46,11 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Boopie Docs',
           position: 'left',
+        },
+        {
+          href: 'https://github.com/YellowBanana508/boopie-docs',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
@@ -102,13 +108,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/YellowBanana508/boopie-docs/edit/main/docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/YellowBanana508/boopie-docs/edit/main/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
